@@ -1,0 +1,41 @@
+CREATE DATABASE decodemtl_test;
+CREATE DATABASE decodemtl_addressbook;
+
+DROP DATABASE decodemtl_test;
+
+SHOW DATABASES;
+
+CREATE TABLE Account (
+);
+CREATE TABLE AddressBook (
+);
+CREATE TABLE Entry (
+);
+CREATE TABLE Test (
+);
+
+DROP TABLE Test;
+
+SHOW TABLES;
+
+ALTER TABLE Entry ADD COLUMN (
+    addressBookId INT,
+    firstName VARCHAR(255),
+    lastName VARCHAR(255),
+    birthday DATETIME,
+    type ENUM('one'),
+    subtype ENUM('two'),
+    contentLineOne VARCHAR(255),
+    contentLineTwo VARCHAR(255),
+    contentLineThree VARCHAR(255),
+    contentLineFour VARCHAR(255),
+    contentLineFive VARCHAR(255)
+);
+
+CREATE TABLE chickens (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    chicken ENUM('rooster', 'hen', 'chick'),
+    birthday DATETIME,
+    maturity DATETIME
+);
+ 
